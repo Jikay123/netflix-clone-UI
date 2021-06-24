@@ -1,0 +1,75 @@
+.banner {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+    position: relative;
+
+    &__title {
+        padding-left: 20px;
+        font-size: 3rem;
+        font-weight: bold;
+
+
+        -moz-text-shadow: 2px 1px 0 rgba(15, 15, 15, 0.4);
+        -webkit-text-shadow: 2px 1px 0 rgba(15, 15, 15, 0.4);
+        text-shadow: 2px 1px 0 rgba(15, 15, 15, 0.4);
+
+
+        // text-shadow: 2px 2px #FF0000;
+    }
+
+    &__button {
+        display: flex;
+
+
+        button {
+            width: 120px;
+            padding: 10px 20px;
+            outline: none;
+            border: none;
+            margin: 1rem;
+
+            color: white;
+            border-radius: 5px;
+            background-color: rgb(54, 54, 54);
+            cursor: pointer;
+            font-weight: bold;
+
+        }
+
+        button:hover {
+            background-color: white;
+            color: #000;
+        }
+
+    }
+
+    &__overview {
+        font-size: 18px;
+        width: 50%;
+        max-width: 450px;
+        font-weight: bold;
+        padding: 0px 0px 0px 20px;
+        -moz-text-shadow: 2px 1px 0 rgba(15, 15, 15, 0.4);
+        -webkit-text-shadow: 2px 1px 0 rgba(15, 15, 15, 0.4);
+        text-shadow: 2px 1px 0 rgba(15, 15, 15, 0.4);
+
+        margin: 0;
+
+    }
+
+    &--bottom {
+        height: 7.4rem;
+        background-image: linear-gradient(180deg,
+                transparent,
+                rgba(37, 37, 37, 0.60),
+                #111);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+
+    }
+}

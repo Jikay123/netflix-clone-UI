@@ -1,0 +1,45 @@
+.row {
+    margin-left: 20px;
+    color: white;
+
+    &__title {
+        font-size: 24px;
+        margin-top: 0;
+    }
+
+    &__posters {
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 20px;
+        scroll-snap-type: x inherit;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .row__poster {
+            width: 100%;
+            object-fit: contain;
+            max-height: 150px;
+            margin-right: 20px;
+            cursor: pointer;
+            transition: all 0.35s ease-in;
+            scroll-snap-align: start;
+
+            &:hover {
+                transform: scale(1.08);
+            }
+        }
+
+        .row_largePoster {
+
+            max-height: 300px;
+
+
+            &:hover {
+                transform: scale(1.09);
+            }
+        }
+    }
+}
