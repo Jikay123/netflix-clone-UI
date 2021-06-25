@@ -31,19 +31,19 @@ function Banner() {
         <div className="banner" style={{
             backgroundSize: "cover",
             backgroundImage: ` url(
-                "https://image.tmdb.org/t/p/original/${movie?.backdrop_path}"
+                "https://image.tmdb.org/t/p/original/${movie.backdrop_path}"
             )`,
             backgroundPosition: "center center",
             height: "60vh",
             marginTop: "0"
         }}>
-            <h1 className="banner__title" style={{ margin: 0 }}>{movie?.title || movie?.name || movie?.original_name}</h1>
+            <h1 className="banner__title" style={{ margin: 0 }}>{movie.title || movie.name || movie.original_name}</h1>
             <div className="banner__button">
                 <button>Play</button>
                 <button>My List</button>
             </div>
             <p className="banner__overview">{
-                truncate(movie?.overview, 150)
+                truncate(movie.overview, 150)
             }</p>
 
             <div className="banner--bottom">

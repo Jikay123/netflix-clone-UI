@@ -38,11 +38,11 @@ function Row({ title, fetchUrl, isLargeRow }) {
         if (trailer) {
             setTrailer('');
         } else {
-            console.log(movie?.name, "paragrams")
+            console.log(movie.name, "paragrams")
             // let arr = movie.name.split(' ');
             // const arr1 = arr.join('_');
             // console.log(arr1, "arr")
-            movieTrailer(movie?.name || "")
+            movieTrailer(movie.name || "")
                 .then(url => {
                     const urlParams = new URLSearchParams(new URL(url).search);
                     // console.log({ urlParams }, "para")
